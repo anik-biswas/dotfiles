@@ -8,7 +8,6 @@ import System.IO
 import XMonad.Util.SpawnOnce
 import XMonad.Util.Cursor
 import XMonad.Hooks.SetWMName
-import XMonad.Hooks.EwmhDesktops
 
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat
@@ -32,9 +31,9 @@ main = do
                         , ppTitle = xmobarColor "green" "" . shorten 50
                         }
         , modMask = mod4Mask     -- Rebind Mod to the Windows key
-        , terminal = "terminator"
+        , terminal = "termite"
         , startupHook = myStartupHook
-        , XMonad.workspaces = ["wb", "te", "fm", "bg", "ce"]
+        , XMonad.workspaces = ["web", "term", "code" ] ++ map show [4..9]
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
         , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
