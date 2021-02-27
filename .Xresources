@@ -1,0 +1,67 @@
+! Using Xft
+! URxvt.font: xft:Liberation Mono:pixelsize=16:antialias=true:autohint=true
+URxvt.font: xft:Hack:pixelsize=16:antialias=true:autohint=true
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.scrollBar_floating: false
+URxvt.scrollstyle: rxvt
+
+!-*- Perl extensions -*-
+URxvt.perl-ext-common: default,selection-to-clipboard,pasta,matcher,keyboard-select
+URxvt.keysym.M-u:     perl:url-select:select_next
+URxvt.url-launcher:   /usr/bin/firefox
+URxvt.underlineURLs:  True
+URxvt.matcher.button: 1 
+URxvt.keysym.M-Escape:perl:keyboard-select:activate
+URxvt.keysym.Control-Shift-V:     perl:pasta:paste
+! Comment this if you do not want to copy when text is selected
+URxvt.clipboard.autocopy: true
+
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+
+! Colors
+URxvt*background: #000000
+URxvt*foreground: #B2B2B2
+! black
+URxvt*color0:  #000000
+URxvt*color8:  #686868
+! red
+URxvt*color1:  #B21818
+URxvt*color9:  #FF5454
+! green
+URxvt*color2:  #18B218
+URxvt*color10: #54FF54
+! yellow
+URxvt*color3:  #B26818
+URxvt*color11: #FFFF54
+! blue
+URxvt*color4:  #1818B2
+URxvt*color12: #5454FF
+! purple
+URxvt*color5:  #B218B2
+URxvt*color13: #FF54FF
+! cyan
+URxvt*color6:  #18B2B2
+URxvt*color14: #54FFFF
+! white
+URxvt*color7:  #B2B2B2
+URxvt*color15: #FFFFFF
+
+URxvt.depth: 32
+URxvt.background: [95]#000000
+
