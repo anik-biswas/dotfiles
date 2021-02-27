@@ -1,1 +1,5 @@
+#!/bin/bash
 
+compton &
+nitrogen --restore &
+lxpolkit &
