@@ -55,7 +55,7 @@
 ;; Launch simple terminal
 (define-key *root-map* (kbd "RET") "exec st")
 ;; Launch rxvt-unicode
-(define-key *root-map* (kbd "c") "exec" urxvtc)
+(define-key *root-map* (kbd "c") "exec urxvtc")
 ;; Reload stumpwm
 (define-key *root-map* (kbd "M-r") "reload")
 ;; Quit stumpwm
