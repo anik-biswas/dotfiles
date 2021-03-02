@@ -102,11 +102,11 @@ layouts = [
     layout.Max(),
     # layout.Stack(num_stacks=2),
     # Try more layouts by unleashing below layouts.
-    # layout.Bsp(),
+    layout.Bsp(),
     # layout.Columns(),
     # layout.Matrix(),
-    layout.MonadTall(),
-    # layout.MonadWide(),
+    # layout.MonadTall(),
+    layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
     # layout.TreeTab(),
@@ -115,7 +115,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='ubuntu',
+    font='roboto',
     fontsize=12,
     padding=3,
 )
