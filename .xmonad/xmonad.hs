@@ -17,6 +17,7 @@ myManageHook = composeAll
 myStartupHook = do
     spawnOnce "nitrogen --restore &"
     spawnOnce "compton &"
+    spawnOnce "urxvtd -q -o -f &"
     spawnOnce "lxpolkit &"
     setWMName "LG3D"
     setDefaultCursor xC_left_ptr
@@ -31,7 +32,7 @@ main = do
                         , ppTitle = xmobarColor "green" "" . shorten 50
                         }
         , modMask = mod4Mask     -- Rebind Mod to the Windows key
-        , terminal = "termite"
+        , terminal = "urxvtc"
         , startupHook = myStartupHook
         , XMonad.workspaces = ["web", "term", "code" ] ++ map show [4..9]
         } `additionalKeys`
