@@ -9,7 +9,7 @@
 (run-shell-command "nitrogen --restore")
 (run-shell-command "compton")
 (run-shell-command "lxpolkit")
-(run-shell-command "urxvtd")
+(run-shell-command "urxvtd -q -o -f")
 
 ;; Fix mousewheel scrolling
 (setf (getenv "GDK_CORE_DEVICE_EVENTS") "1")

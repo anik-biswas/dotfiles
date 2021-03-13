@@ -11,7 +11,7 @@
 ;; Autorun programs
 (run-shell-command "compton")
 (run-shell-command "nitrogen --restore")
-(run-shell-command "urxvtd")
+(run-shell-command "urxvtd -q -o -f")
 (run-shell-command "xsetroot -cursor_name left_ptr")
 (run-shell-command "lxpolkit")
 
@@ -42,7 +42,7 @@
  stumpwm:*mode-line-pad-y* 1
  stumpwm:*mode-line-timeout* 5
  stumpwm:*mouse-focus-policy* :click
- stumpwm:*group-format* "%s%t"
+ stumpwm:*group-format* "%n%s%t"
  stumpwm:*time-modeline-string* "%a, %b %d, %Y %l:%M%p"
  stumpwm:*window-format* "^b^(:fg \"#9aedfe\")<%25t>"
  stumpwm:*window-border-style* :tight
